@@ -11,7 +11,7 @@ export class AboutComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { 
     const http$ = Observable.create(observer => {
       fetch('/api/courses')
           .then(response => {
